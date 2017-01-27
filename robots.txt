@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /members/
+
+User-agent: *
+Disallow: /new/
+
+User-agent: *
+Disallow: /charts/
+
+sitemap: http://cdn.attracta.com/sitemap/208300.xml.gz

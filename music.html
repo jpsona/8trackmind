@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>8Track Mind</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+        <link rel="shortcut icon" href="favicon.ico"/>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:light' rel='stylesheet' type='text/css'/>
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'/>
+        <link rel="stylesheet" type="text/css" href="styles/default.css"/>
+        <script language="JavaScript" type="text/javascript" src="scripts/jquery/ContentFlow/contentflow.js"></script>
+        <script language="JavaScript" type="text/javascript" src="scripts/music.js"></script>
+
+        <!--[if lt IE 7]>
+    <style media="screen" type="text/css">
+    #container {
+        height:100%;
+    }
+    </style>
+    <![endif]-->
+        <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-23877753-1']);
+            _gaq.push(['_trackPageview']);
+		
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+            
+            img = new Array(60);
+            for (i = 0; i < 60; i++) {
+                img[i] = new Image();
+                img[i].src = 'images/covers/album' + i + '.jpg';
+            }
+        </script>
+    </head>
+    <body>
+        <div id="container">
+
+            <div id="purpleBar">&nbsp;</div>
+            <div id="body" style="padding-bottom: 20px">
+                <img src="images/logo.png" id="logo"/>
+                <img src="images/band_line_faded.jpg" id="mainImg"/>
+                <div id="navbar">
+                    <table id="navbarTable">
+                        <tr>
+                            <td><a href="index.html">home</a></td>
+                            <td class="current"><a href="music.html">music</a></td>
+                            <td><a href="band.html">band</a></td>
+                            <td><a href="schedule.html">schedule</a></td>
+                            <td><a href="gallery.html">gallery</a></td>
+                            <td><a href="media.html">media</a></td>
+                            <td><a href="contact.html">contact</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="plusOneLink">
+                    <!-- Place this tag where you want the +1 button to render -->
+                    <g:plusone size="medium" count="false" href="http://www.8trackmind.ca"></g:plusone>
+
+                    <!-- Place this tag after the last plusone tag -->
+                    <script type="text/javascript">
+                      (function() {
+                        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                        po.src = 'https://apis.google.com/js/plusone.js';
+                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                      })();
+                    </script>
+                </div>
+                <div id="likeLink">
+                    <a href="http://www.facebook.com/8TrackMindBand" target="top"><img src="images/fb-icon.png"/></a>
+                    <iframe src="http://www.facebook.com/plugins/like.php?app_id=123117371101855&amp;href=http%3A%2F%2Fwww.facebook.com%2F8TrackMindBand&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+                </div>
+
+                <h2 id="subpageHeading" class="heading">MUSIC</h2>
+                <hr id="subpageHeadingUnderline"/>
+
+                <div class="contentBody">
+                    <p>
+                        After a tremendous response to its big-stage debut at the renowned Harvest Festival in
+                        Fredericton, 8Track Mind quickly established itself as a visually exciting and musically
+                        dynamic band that thrills listeners and fills dance floors. One thing everyone points out
+                        is the wide range of material this <nobr>9-piece</nobr> band covers and how well those songs are
+                        played. There is rock, pop, R&B, dance, and even a bit of latin delivered with energy
+                        and excellence. As one fan noted: "Wow, we've never seen a band play Chicago, Stevie
+                        Wonder and Lighthouse – this horn section is amazing. And the choice of tunes is really
+                        great. These are pro players, and we love the male and female vocal team; singing alone
+                        or together they really keep things fresh and interesting. We screamed until they came
+                        back for encores."
+                    </p>
+
+                    <p>
+                        That's another great thing about 8Track Mind – with its large repertoire of 70s and
+                        80s tunes to select from and the ongoing addition of other classic songs to that list, no
+                        two nights are the same... except for the encores.
+                    </p>
+
+                    <p>
+						The music of 8Track Mind comes from these and other great albums.  Scroll through and see which ones you remember.
+                    </p>
+
+                    <br/>
+                    <div id="albumCoverFlow" class="ContentFlow">
+                        <div class="loadIndicator"><div class="indicator"></div></div>
+                        <div class="flow">
+                            <script>
+                                albumCover('images/covers/album41.jpg', 'Waterloo', 'Abba');
+                                albumCover('images/covers/album51.jpg', 'Permanent Vacation', 'Aerosmith');
+                                // albumCover('images/covers/album17.jpg', 'AWB', 'Average White Band');
+                                albumCover('images/covers/album42.jpg', 'The Stranger', 'Billy Joel');
+                                //  albumCover('images/covers/album20.jpg', 'Night Moves', 'Bob Seger');
+                                //  albumCover('images/covers/album30.jpg', 'Ramblin\' Gamblin\' Man', 'The Bob Seger System');
+                                albumCover('images/covers/album18.jpg', 'Silk Degrees', 'Boz Scaggs');
+                                albumCover('images/covers/album22.jpg', 'My Own Way To Rock', 'Burton Cummings');
+                                albumCover('images/covers/album8.jpg', 'Chicago II', 'Chicago')
+                                albumCover('images/covers/album3.jpg', 'Zoom', 'Commodores');
+                                albumCover('images/covers/album14.jpg', 'Bad Girls', 'Donna Summer');
+                                albumCover('images/covers/album6.jpg', 'The Captain and Me', 'The Doobie Brothers');
+                                albumCover('images/covers/album44.jpg', 'Hotel California', 'The Eagles');
+                                albumCover('images/covers/album33.jpg', 'Eddie Money', 'Eddie Money');
+                                albumCover('images/covers/album43.jpg', 'Goodbye Yellow Brick Road', 'Elton John');
+                                albumCover('images/covers/album46.jpg', 'This Year\'s Model', 'Elvis Costello');
+                                albumCover('images/covers/album49.jpg', 'Be Yourself Tonight', 'The Eurythmics');
+                                albumCover('images/covers/album2.jpg', 'Rumours', 'Fleetwood Mac');
+                                albumCover('images/covers/album31.jpg', 'Greatest Hits / Live', 'Heart');
+//                                 albumCover('images/covers/album36.jpg', 'Hot Chocolate', 'Hot Chocolate');
+								albumCover('images/covers/album48.jpg', 'Sports', 'Huey Lewis & The News');
+                                albumCover('images/covers/album28.jpg', 'KC & The Sunshine Band', 'KC & The Sunshine Band');
+                                //    albumCover('images/covers/album10.jpg', 'Part 3...And More', 'KC & The Sunshine Band');
+//                                 albumCover('images/covers/album37.jpg', 'I\'ve Got The Music In Me', 'The Kiki Dee Band');
+                                albumCover('images/covers/album19.jpg', 'One Fine Morning', 'Lighthouse');
+//                                 albumCover('images/covers/album38.jpg', 'Sleeper Catcher', 'Little River Band');
+//                                 albumCover('images/covers/album40.jpg', 'Loggins and Messina', 'Loggins and Messina');
+                                albumCover('images/covers/album13.jpg', 'Street Survivors', 'Lynyrd Skynyrd');
+//                                 albumCover('images/covers/album15.jpg', 'Nicolette', 'Nicolette Larson');
+//                                 albumCover('images/covers/album11.jpg', 'American Gigolo', 'Original Soundtrack');
+                                albumCover('images/covers/album16.jpg', 'Grease', 'Original Soundtrack');
+                                albumCover('images/covers/album1.jpg', 'Saturday Night Fever', 'Original Soundtrack');
+                                //   albumCover('images/covers/album24.jpg', 'Thank God It\'s Friday', 'Original Soundtrack');
+                                albumCover('images/covers/album23.jpg', 'One Trick Pony', 'Paul Simon');
+                                albumCover('images/covers/album50.jpg', 'Hammer On A Drum', 'The Payolas');
+                                albumCover('images/covers/album32.jpg', 'Uncut', 'The Powder Blues');
+                                albumCover('images/covers/album25.jpg', 'Procol Harum', 'Procol Harum');
+                                albumCover('images/covers/album47.jpg', 'A Night At The Opera', 'Queen');
+                                albumCover('images/covers/album12.jpg', 'Secrets', 'Robert Palmer');
+                                albumCover('images/covers/album5.jpg', 'Some Girls', 'The Rolling Stones');
+                                albumCover('images/covers/album29.jpg', 'Smoke From A Distant Fire', 'Sanford And Townsend');
+                                albumCover('images/covers/album34.jpg', 'Gimme Some Lovin\'', 'The Spencer Davis Group');
+                                albumCover('images/covers/album45.jpg', 'Aja', 'Steely Dan');
+                                albumCover('images/covers/album4.jpg', 'Songs In The Key Of Life', 'Stevie Wonder');
+                                albumCover('images/covers/album39.jpg', 'Talking Book', 'Stevie Wonder');
+                                albumCover('images/covers/album35.jpg', 'Desolation Boulevard', 'Sweet');
+                                albumCover('images/covers/album26.jpg', 'A Taste Of Honey', 'A Taste Of Honey');
+                                albumCover('images/covers/album27.jpg', 'Toto', 'Toto');
+                                albumCover('images/covers/album7.jpg', 'Wild Cherry', 'Wild Cherry');
+                                albumCover('images/covers/album21.jpg', 'Band on the Run', 'Wings');
+                                albumCover('images/covers/album9.jpg', 'Red Rose Speedway', 'Wings');
+
+                                // albumCover('images/covers/album7.jpg', '', '');
+                            </script>
+                        </div>
+
+                        <div class="globalCaption"></div>
+                        <div class="scrollbar"><div class="slider"><div class="position"></div></div></div>
+                    </div>
+
+                    <br/>
+                </div>
+            </div>
+            <div id="footer">Photo: JohnDraper.ca - Production: Ryan DeCourcey - Direction: <a href="http://WayneBMarketing.com" target="top">WayneBMarketing.com</a></div>
+        </div>
+    </body>
+
+    <script type="text/javascript">
+        var myNewFlow = new ContentFlow('albumCoverFlow', { scaleFactor: 1.25, reflectionHeight: 0.2 } ) ;
+    </script>
+</html>

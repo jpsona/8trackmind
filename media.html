@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>8Track Mind</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+        <link rel="shortcut icon" href="favicon.ico"/>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:light' rel='stylesheet' type='text/css'/>
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'/>
+        <link rel="stylesheet" href="scripts/videobox/css/videobox.css" type="text/css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="styles/default.css"/>
+        <script type="text/javascript" src="http://static.flowplayer.org/js/flowplayer-3.2.6.min.js"></script>
+        <script type="text/javascript" src="scripts/videobox/js/mootools.js"></script>
+        <script type="text/javascript" src="scripts/videobox/js/swfobject.js"></script>
+        <script type="text/javascript" src="scripts/videobox/js/videobox.js"></script>
+
+                <!--[if lt IE 7]>
+            <style media="screen" type="text/css">
+            #container {
+                height:100%;
+            }
+            </style>
+            <![endif]-->
+            
+        <script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-23877753-1']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		
+		</script>
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="purpleBar">&nbsp;</div>
+            <div id="body">
+                <img src="images/logo.png" id="logo"/>
+                <img src="images/band_line_faded.jpg" id="mainImg"/>
+                <div id="navbar">
+                    <table id="navbarTable">
+                        <tr>
+                            <td><a href="index.html">home</a></td>
+                            <td><a href="music.html">music</a></td>
+                            <td><a href="band.html">band</a></td>
+                            <td><a href="schedule.html">schedule</a></td>
+                            <td><a href="gallery.html">gallery</a></td>
+                            <td class="current"><a href="media.html">media</a></td>
+                            <td><a href="contact.html">contact</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="plusOneLink">
+                    <!-- Place this tag where you want the +1 button to render -->
+                    <g:plusone size="medium" count="false" href="http://www.8trackmind.ca"></g:plusone>
+
+                    <!-- Place this tag after the last plusone tag -->
+                    <script type="text/javascript">
+                      (function() {
+                        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                        po.src = 'https://apis.google.com/js/plusone.js';
+                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                      })();
+                    </script>
+                </div>
+                <div id="likeLink">
+                    <a href="http://www.facebook.com/8TrackMindBand" target="top"><img src="images/fb-icon.png"/></a>
+                    <iframe src="http://www.facebook.com/plugins/like.php?app_id=123117371101855&amp;href=http%3A%2F%2Fwww.facebook.com%2F8TrackMindBand&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+                </div>
+
+                <h2 id="subpageHeading" class="heading">MEDIA</h2>
+                <hr id="subpageHeadingUnderline"/>
+
+                <div class="contentBody">
+                    <br/>
+                    <h3 class="heading">AUDIO</h3>
+
+                    <p class="audioLabel"><a href="audio/8track.mp3">8Track Mind Sampler</a></p>
+                    <div class="audio" href="audio/8track.mp3"></div>
+
+					<p class="audioLabel"><a href="audio/peg.mp3">I Wish (Stevie Wonder)</a></p>
+                    <div class="audio" href="audio/iwish.mp3"></div>
+					
+                    <p class="audioLabel"><a href="audio/smoothoperator.mp3">Smooth Operator (Sade)</a></p>
+                    <div class="audio" href="audio/smoothoperator.mp3"></div>
+
+                    <p class="audioLabel"><a href="audio/peg.mp3">Peg (Steely Dan)</a></p>
+                    <div class="audio" href="audio/peg.mp3"></div>
+
+                    <!--
+                    <p class="audioLabel"><a href="audio/tenth.mp3">Tenth Avenue Freeze-Out (Bruce Springsteen)</a></p>
+                    <div class="audio" href="audio/tenth.mp3"></div>
+                    -->
+
+                    <p class="audioLabel"><a href="audio/bakerstreet.mp3">Baker Street (Gerry Rafferty)</a></p>
+                    <div class="audio" href="audio/bakerstreet.mp3"></div>
+
+                    <script>
+                        flowplayer("div.audio", { src: "http://releases.flowplayer.org/swf/flowplayer-3.2.7.swf", wmode: "opaque"}, {
+
+                            // fullscreen button not needed here
+                            plugins: {
+                                controls: {
+                                    fullscreen: false,
+                                    height: 20,
+                                    width: 400,
+                                    autoHide: false
+                                }
+                            },
+                            wmode: "transparent",
+                        
+                            clip: {
+                                autoPlay: false,
+
+                                // optional: when playback starts close the first audio playback
+                                onBeforeBegin: function() {
+                                    $f("player").close();
+                                }
+                            }
+
+                        });
+                    </script>
+                    <br/><br/>
+					<!--
+                    <h3 class="heading">VIDEO</h3>
+
+                    <p>
+                        8Track Mind makes its debut at the 2006 Harvest Jazz & Blues Festival. 
+                    </p>
+
+                    <p>
+                        <li class="mediaBullet"><a href="http://www.youtube.com/watch?v=_EpoeB7weck" rel="vidbox" title="8Track Mind - I've Got The Music In Me<br>Harvest Jazz and Blues Festival 2006">I've Got The Music In Me</a></li>
+                    </p>
+                    <p>
+                        <li class="mediaBullet"><a href="http://www.youtube.com/watch?v=NNuLMhcTBVA" rel="vidbox" title="8Track Mind - My Own Way To Rock<br>Harvest Jazz and Blues Festival 2006">My Own Way To Rock</a></li>
+                    </p>
+                    <p>
+                        <li class="mediaBullet"><a href="http://www.youtube.com/watch?v=hh92L3fEJpY" rel="vidbox" title="8Track Mind - 25 Or 6 To 4<br>Harvest Jazz and Blues Festival 2006">25 Or 6 To 4</a></li>
+                    </p>
+                    <p>
+                    	Video courtesy of Aliant and the Harvest Jazz & Blues Festival.
+					</p>
+                    <br/>
+					-->
+                    <h3 class="heading">DOWNLOADS</h3>
+
+                    <p>
+                        <li class="mediaBullet"><a href="downloads/8tm-epk.zip">Complete Electronic Press Kit (12.6 MB)</a></li>
+                    </p>
+                    <p>
+                        <li class="mediaBullet"><a href="downloads/dropcard.pdf">Drop Card</a></li>
+                    </p>
+                    <p>
+                        <li class="mediaBullet"><a href="downloads/groupphoto.pdf">Group Photo</a></li>
+                    </p>
+                    <p>
+                        <li class="mediaBullet"><a href="downloads/businesscard.pdf">Business Card</a></li>
+                    </p>
+                    <p>
+                        <li class="mediaBullet"><a href="downloads/poster.pdf">Poster</a></li>
+                    </p>
+                </div>
+            </div>
+           <div id="footer">Photo: JohnDraper.ca - Production: Ryan DeCourcey - Direction: <a href="http://WayneBMarketing.com" target="top">WayneBMarketing.com</a></div>
+        </div>
+    </body>
+</html>

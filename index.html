@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>8Track Mind</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+        <link rel="shortcut icon" href="favicon.ico"/>
+        <script language="JavaScript" type="text/javascript" src="scripts/fader.js"></script>
+        <script language="JavaScript" type="text/javascript" src="scripts/shows.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:light' rel='stylesheet' type='text/css'/>
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'/>
+        <link rel="stylesheet" type="text/css" href="styles/default.css"/>
+
+        <!--[if lt IE 7]>
+    <style media="screen" type="text/css">
+    #container {
+        height:100%;
+    }
+    </style>
+    <![endif]-->
+        <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-23877753-1']);
+            _gaq.push(['_trackPageview']);
+		
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="purpleBar">&nbsp;</div>
+            <div id="body">
+                <img src="images/logo.png" id="logo"/>
+                <img src="images/band_line_happy.jpg" id="mainImg"/>
+                <div id="navbar">
+                    <table id="navbarTable">
+                        <tr>
+                            <td class="current"><a href="index.html">home</a></td>
+                            <td><a href="music.html">music</a></td>
+                            <td><a href="band.html">band</a></td>
+                            <td><a href="schedule.html">schedule</a></td>
+                            <td><a href="gallery.html">gallery</a></td>
+                            <td><a href="media.html">media</a></td>
+                            <td><a href="contact.html">contact</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="plusOneLink">
+                    <!-- Place this tag where you want the +1 button to render -->
+                    <g:plusone size="medium" count="false" href="http://www.8trackmind.ca"></g:plusone>
+
+                    <!-- Place this tag after the last plusone tag -->
+                    <script type="text/javascript">
+                      (function() {
+                        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                        po.src = 'https://apis.google.com/js/plusone.js';
+                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                      })();
+                    </script>
+                </div>
+                <div id="likeLink">
+                    <a href="http://www.facebook.com/8TrackMindBand" target="top"><img src="images/fb-icon.png"/></a>
+                    <iframe src="http://www.facebook.com/plugins/like.php?app_id=123117371101855&amp;href=http%3A%2F%2Fwww.facebook.com%2F8TrackMindBand&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+                </div>
+                <div id="indexpush">&nbsp;</div>
+                <h2 id="finest" class="heading">THE FINEST IN RETRO POP,<br/> ROCK AND GROOVE MUSIC.</h2>
+
+                <div id="finestBlurb">
+                    With a dynamic male and female vocal team, wicked 3-piece horn section, and
+                    super-tight rhythm section, 8Track Mind is a 9-piece band that plays the
+                    best in popular dance and party music.&nbsp;&nbsp;&nbsp;<a href="music.html">Read more</a>
+                </div>
+                <div id="whatContainer">
+                    <h3 id="whatHeading" class="heading">WHAT THEY'RE SAYING</h3>
+                    <div id="fade0"></div>
+                </div>
+				
+                <div id="upcomingContainer">
+                    <h3 id="upcomingHeading" class="heading">APPEARING NEXT</h3>
+                    <div id="upcoming">
+                        <script>
+                            writeUpcomingShows(1);
+                        </script>
+						<br/>
+                    </div>
+                </div>
+				
+                <div id="indexpush2">Located in Fredericton, New Brunswick, this band plays special events including
+                    weddings, corporate gigs and parties, as well as concerts, festivals, and the occasional
+                    club date. With its diverse song selection, experienced players, and energized stage
+                    presence, 8Track Mind delivers a uniquely fun and entertaining musical experience for
+                    fans of classic pop, rock, and dance music. The comment "What a great party band"
+                    pretty much says it all.</div>
+            </div>
+            <div id="footer">Photo: JohnDraper.ca - Production: Ryan DeCourcey - Direction: <a href="http://WayneBMarketing.com" target="top">WayneBMarketing.com</a></div>
+        </div>
+
+        <script type="text/javascript">
+            img = new Array(60);
+            for (i = 0; i < 60; i++) {
+                img[i] = new Image();
+                img[i].src = 'images/covers/album' + i + '.jpg';
+            }
+        </script>
+    </body>
+</html>
