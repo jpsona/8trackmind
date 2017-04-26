@@ -64,7 +64,9 @@ function addAllShows() {
 	addShow(new Show(2016, 9, 8, "NBEX", "Fredericton, NB", "Public Performance", "8:00 PM"));
 	addShow(new Show(2016, 9, 23, "Crowne Plaza", "Fredericton, NB", "Private Function", ""));
 	addShow(new Show(2016, 12, 31, "Algonquin Hotel", "St. Andrews, NB", "New Year's Eve", ""));
+	addShow(new Show(2017, 2, 11, "Delta Fredericton", "Fredericton, NB", "Hospice Fredericton Fundraiser", ""));
 	addShow(new Show(2017, 2, 25, "Kingswood", "Fredericton, NB", "Private Function", ""));
+	addShow(new Show(2017, 5, 24, "Fredericton Convention Centre", "Fredericton, NB", "Private Function", ""));
 }
 
 var shows = new Array();
