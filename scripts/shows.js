@@ -66,7 +66,8 @@ function addAllShows() {
 	addShow(new Show(2016, 12, 31, "Algonquin Hotel", "St. Andrews, NB", "New Year's Eve", ""));
 	addShow(new Show(2017, 2, 11, "Delta Fredericton", "Fredericton, NB", "Hospice Fredericton Fundraiser", ""));
 	addShow(new Show(2017, 2, 25, "Kingswood", "Fredericton, NB", "Private Function", ""));
-	addShow(new Show(2015, 5, 24, "Fredericton Inn", "Fredericton, NB", "Private Function", ""));
+	addShow(new Show(2017, 5, 24, "Fredericton Inn", "Fredericton, NB", "Private Function", ""));
+	addShow(new Show(2017, 6, 9, "Exhibition Grounds", "Fredericton, NB", "Freddy Beach Ribfest", "7:00 PM"));
 	addShow(new Show(2017, 8, 29, "New Maryland Centre Park", "New Maryland, NB", "Summer Concert Series", "7:00 PM"));
 }
 
