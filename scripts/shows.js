@@ -72,6 +72,8 @@ function addAllShows() {
 	addShow(new Show(2017, 8, 26, "Dolan's Pub", "Fredericton, NB", "Public Performance", "10:30 PM"));
 	addShow(new Show(2017, 8, 29, "New Maryland Centre Park", "New Maryland, NB", "Summer Concert Series", "7:00 PM"));
 	addShow(new Show(2017, 12, 31, "Algonquin Hotel", "St. Andrews, NB", "New Year's Eve", ""));
+	addShow(new Show(2018, 4, 11, "Dolan's Pub", "Fredericton, NB", "Meals on Wheels Benefit", "7:00 PM"));
+	addShow(new Show(2018, 4, 28, "Delta Fredericton", "Fredericton, NB", "Hospice Fredericton Fundraiser", ""));
 }
 
 var shows = new Array();
