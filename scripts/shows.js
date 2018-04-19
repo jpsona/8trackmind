@@ -74,6 +74,7 @@ function addAllShows() {
 	addShow(new Show(2017, 12, 31, "Algonquin Hotel", "St. Andrews, NB", "New Year's Eve", ""));
 	addShow(new Show(2018, 4, 11, "Dolan's Pub", "Fredericton, NB", "Meals on Wheels Benefit", "7:00 PM"));
 	addShow(new Show(2018, 4, 28, "Delta Fredericton", "Fredericton, NB", "Hospice Fredericton Fundraiser", ""));
+	addShow(new Show(2018, 8, 8, "", "Fredericton Junction, NB", "Come Home Week", "4:00 PM"));
 }
 
 var shows = new Array();
