@@ -26,10 +26,10 @@ function addAllShows() {
 	addShow(new Show(2013, 11, 01, "Fredericton High School", "Fredericton, NB", "FHS Battle of the Bands - Headliner", ""));
 	addShow(new Show(2013, 12, 13, "Barrack Green Armories", "Saint John, NB", "Private Function", ""));
 	addShow(new Show(2013, 12, 14, "Kingswood", "Fredericton, NB", "Private Function", ""));
-	addShow(new Show(2014, 1, 2, "Dolan's Pub", "Fredericton, NB", "Public Performance", "10:30 PM"));	
+	addShow(new Show(2014, 1, 2, "Dolan's Pub", "Fredericton, NB", "Public Performance", "10:30 PM"));
 	addShow(new Show(2014, 1, 3, "Dolan's Pub", "Fredericton, NB", "Public Performance", "10:30 PM"));
 	addShow(new Show(2014, 1, 4, "Dolan's Pub", "Fredericton, NB", "Public Performance", "10:30 PM"));
-	addShow(new Show(2014, 4, 24, "Dolan's Pub", "Fredericton, NB", "Public Performance", "10:30 PM"));	
+	addShow(new Show(2014, 4, 24, "Dolan's Pub", "Fredericton, NB", "Public Performance", "10:30 PM"));
 	addShow(new Show(2014, 4, 25, "Dolan's Pub", "Fredericton, NB", "Public Performance", "10:30 PM"));
 	addShow(new Show(2014, 4, 26, "Dolan's Pub", "Fredericton, NB", "Public Performance", "10:30 PM"));
 	addShow(new Show(2014, 5, 9, "Fredericton Inn", "Fredericton, NB", "Habitat for Humanity Event", ""));
@@ -68,13 +68,17 @@ function addAllShows() {
 	addShow(new Show(2017, 2, 25, "Kingswood", "Fredericton, NB", "Private Function", ""));
 	addShow(new Show(2017, 5, 24, "Fredericton Inn", "Fredericton, NB", "Private Function", ""));
 	addShow(new Show(2017, 6, 9, "Exhibition Grounds", "Fredericton, NB", "Freddy Beach Ribfest", "7:00 PM"));
-	addShow(new Show(2017, 8, 25, "Dolan's Pub", "Fredericton, NB", "Public Performance", "10:30 PM"));	
+	addShow(new Show(2017, 8, 25, "Dolan's Pub", "Fredericton, NB", "Public Performance", "10:30 PM"));
 	addShow(new Show(2017, 8, 26, "Dolan's Pub", "Fredericton, NB", "Public Performance", "10:30 PM"));
 	addShow(new Show(2017, 8, 29, "New Maryland Centre Park", "New Maryland, NB", "Summer Concert Series", "7:00 PM"));
 	addShow(new Show(2017, 12, 31, "Algonquin Hotel", "St. Andrews, NB", "New Year's Eve", ""));
 	addShow(new Show(2018, 4, 11, "Dolan's Pub", "Fredericton, NB", "Meals on Wheels Benefit", "7:00 PM"));
 	addShow(new Show(2018, 4, 28, "Delta Fredericton", "Fredericton, NB", "Hospice Fredericton Fundraiser", ""));
+	addShow(new Show(2018, 6, 9, "Exhibition Grounds", "Fredericton, NB", "Freddy Beach Ribfest", "5:00 PM"));
+	addShow(new Show(2018, 6, 29, "Delta Fredericton", "Fredericton, NB", "River Jam", "11:00 PM"));
 	addShow(new Show(2018, 8, 8, "", "Fredericton Junction, NB", "Come Home Week", "4:00 PM"));
+	addShow(new Show(2018, 8, 25, "", "Nackawic, NB", "Festival on the Bend", ""));
+	//addShow(new Show(2018, 12, 31, "Algonquin Hotel", "St. Andrews, NB", "New Year's Eve", ""));
 }
 
 var shows = new Array();
@@ -95,7 +99,7 @@ function addShow(show) {
 function writeUpcomingShows(numShows) {
     addAllShows();
     var showsWritten = 0;
-    
+
     for (i = 0; i < shows.length; i++) {
         var result = writeUpcomingShow(shows[i]);
         showsWritten += result;
@@ -106,7 +110,7 @@ function writeUpcomingShows(numShows) {
             writeSeparator();
         }
     }
-    
+
     if (result == 0) {
         document.write("No shows scheduled.");
     }
@@ -123,17 +127,17 @@ function writeAllShows() {
     for (i = 0; i < shows.length; i++) {
         showsPrinted += writeShow(shows[i]);
     }
-    
+
     if (showsPrinted == 0) {
         document.write('<tr><td colspan="4">No shows scheduled.</td></tr>');
     }
 }
 
-var monthsLong = new Array("January", "February", "March", 
+var monthsLong = new Array("January", "February", "March",
     "April", "May", "June", "July", "August", "September",
     "October", "November", "December");
 
-var months = new Array("Jan", "Feb", "Mar", 
+var months = new Array("Jan", "Feb", "Mar",
     "Apr", "May", "Jun", "Jul", "Aug", "Sep",
     "Oct", "Nov", "Dec");
 
