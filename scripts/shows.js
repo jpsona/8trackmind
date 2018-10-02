@@ -78,7 +78,7 @@ function addAllShows() {
 	addShow(new Show(2018, 6, 29, "Delta Fredericton", "Fredericton, NB", "River Jam", "11:00 PM"));
 	addShow(new Show(2018, 8, 8, "", "Fredericton Junction, NB", "Come Home Week", "4:00 PM"));
 	addShow(new Show(2018, 8, 25, "", "Nackawic, NB", "Festival on the Bend", ""));
-	//addShow(new Show(2018, 12, 31, "Algonquin Hotel", "St. Andrews, NB", "New Year's Eve", ""));
+	addShow(new Show(2018, 12, 31, "Algonquin Hotel", "St. Andrews, NB", "New Year's Eve", ""));
 }
 
 var shows = new Array();
