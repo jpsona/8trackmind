@@ -79,6 +79,11 @@ function addAllShows() {
 	addShow(new Show(2018, 8, 8, "", "Fredericton Junction, NB", "Come Home Week", "4:00 PM"));
 	addShow(new Show(2018, 8, 25, "", "Nackawic, NB", "Festival on the Bend", ""));
 	addShow(new Show(2018, 12, 31, "Algonquin Hotel", "St. Andrews, NB", "New Year's Eve", ""));
+	addShow(new Show(2019, 4, 27, "Delta Fredericton", "Fredericton, NB", "Hospice Fredericton Fundraiser", ""));
+	addShow(new Show(2019, 6, 1, "Exhibition Grounds", "Fredericton, NB", "Relay For Life", ""));
+	addShow(new Show(2019, 6, 2, "Fredericton Playhouse", "Fredericton, NB", "Little Sprouts Concert", ""));
+	addShow(new Show(2019, 6, 6, "Exhibition Grounds", "Fredericton, NB", "Freddy Beach Ribfest", "8:45 PM"));
+	addShow(new Show(2019, 7, 24, "Nashwaaksis Commons", "Fredericton, NB", "Summer Concert Series", "7:00 PM"));
 }
 
 var shows = new Array();
