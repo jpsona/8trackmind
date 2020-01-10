@@ -84,6 +84,9 @@ function addAllShows() {
 	addShow(new Show(2019, 6, 2, "Fredericton Playhouse", "Fredericton, NB", "Little Sprouts Concert", ""));
 	addShow(new Show(2019, 6, 6, "Exhibition Grounds", "Fredericton, NB", "Freddy Beach Ribfest", "8:45 PM"));
 	addShow(new Show(2019, 7, 24, "Nashwaaksis Commons", "Fredericton, NB", "Summer Concert Series", "7:00 PM"));
+	addShow(new Show(2019, 11, 16, "Speedbumps", "Fredericton, NB", "Public Performance", ""));
+        addShow(new Show(2020, 4, 18, "Speedbumps", "Fredericton, NB", "Public Performance", ""));
+        addShow(new Show(2020, 9, 26, "", "", "Private Function", ""));
 }
 
 var shows = new Array();
